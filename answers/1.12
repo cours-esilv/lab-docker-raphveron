@@ -1,0 +1,2 @@
+docker run -d -p 8080:5000 --name mybackcontainer monusername/myback:latest
+docker run -d -p 8081:80 -e WS_BACK_URL=http://localhost:8080 --name myfrontcontainer monusername/myfront:latest
